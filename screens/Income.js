@@ -48,11 +48,11 @@ const Income = () => {
     setIncomeCategory("");
   };
 
-  const options = [
-    { label: "Option 1", value: "option-1" },
-    { label: "Option 2", value: "option-2" },
-    { label: "Option 3", value: "option-3" },
-  ];
+  // const options = [
+  //   { label: "Option 1", value: "option-1" },
+  //   { label: "Option 2", value: "option-2" },
+  //   { label: "Option 3", value: "option-3" },
+  // ];
 
   return (
     <View style={styles.incomeContainer}>

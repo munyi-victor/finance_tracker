@@ -19,29 +19,6 @@ const ShowBudget = () => {
       });
     }, []);
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const budget = (
-  //       await firebase
-  //         .firestore()
-  //         .collection("budget_collection")
-  //         .doc(firebase.auth().currentUser.uid)
-  //         .get()
-  //     ).data();
-  //     setBudget(budget);
-  //   }
-  //   fetchData();
-  // }, []);
-
-  // const currentDate = new Date();
-  // const fullDate = currentDate.toLocaleDateString("en-US", {
-  //   month: "long",
-  //   day: "numeric",
-  //   year: "numeric",
-  //   hour: "numeric",
-  //   minute:'numeric'
-  // });
-
   return (
     <View style={styles.budgetContainer}>
       {budget ? (
@@ -82,3 +59,27 @@ const styles = StyleSheet.create({
     fontSize:18
   }
 })
+
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const budget = (
+  //       await firebase
+  //         .firestore()
+  //         .collection("budget_collection")
+  //         .doc(firebase.auth().currentUser.uid)
+  //         .get()
+  //     ).data();
+  //     setBudget(budget);
+  //   }
+  //   fetchData();
+  // }, []);
+
+  // const currentDate = new Date();
+  // const fullDate = currentDate.toLocaleDateString("en-US", {
+  //   month: "long",
+  //   day: "numeric",
+  //   year: "numeric",
+  //   hour: "numeric",
+  //   minute:'numeric'
+  // });
