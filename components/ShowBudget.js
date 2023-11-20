@@ -26,15 +26,19 @@ const ShowBudget = () => {
           <Text style={{ fontSize: 22, fontWeight: "bold", marginBottom: 10 }}>
             Your Budget
           </Text>
-          <Text style={styles.budgetText}>Name: {budget.budgetName}</Text>
-          <Text style={styles.budgetText}>Amount: {budget.budgetAmount}</Text>
+          <Text style={styles.budgetText}>
+            Name: {budget.budgetName}
+          </Text>
+          <Text style={styles.budgetText}>
+            Amount: {budget.budgetAmount}
+          </Text>
           <Text style={styles.budgetText}>
             Duration: {budget.budgetDuration}
           </Text>
           <Text style={styles.budgetText}>Date: {budget.dateAdded}</Text>
         </View>
       ) : (
-        <Text>Loading</Text>
+        <Text>You have no active budgets</Text>
       )}
     </View>
   );
