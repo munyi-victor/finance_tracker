@@ -11,9 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -21,10 +19,24 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/my-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.munyi_victor.finance_tracker"
     },
     "web": {
       "favicon": "./assets/my-icon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2d85316c-ac05-479b-894d-9bc5887040e3"
+      }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ]
   }
 }

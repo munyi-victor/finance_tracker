@@ -2,6 +2,8 @@ import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import React, { useState, useEffect } from 'react';
 import { firebase } from '../config';
 
+import Profile from '../components/Profile';
+
 const Settings = () => {
   const [name, setName] = useState([]);
 
@@ -34,6 +36,9 @@ const Settings = () => {
 
   return (
     <View style={styles.container}>
+
+      <Profile />
+
       <Text style={{ fontSize: 20, fontWeight: "bold" }}>
         {name.firstName} {name.lastName}
       </Text>
